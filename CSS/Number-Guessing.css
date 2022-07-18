@@ -1,0 +1,103 @@
+.resultParas {
+    color: #eee;
+}
+.text-center center {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: var(--dark-color);
+    display: inline-block;
+    
+    margin: 100px 50px ;        
+        text-align:center;
+}
+
+.text-center p {
+    text-align:center;
+}
+:root {
+    --main-color: #fa5353;
+    --dark-color: #1b182b;
+    --light-color: #322f40;
+    --text-color:  white;
+
+}
+::selection {
+    color: var(--text-color);
+    background: var(--main-color);
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--dark-color);
+    z-index: 100;
+}
+  body {
+    
+ 
+    width: 50%;
+    height: 100%;
+    max-width: 800px;
+    min-width: 480px;
+    margin: 0 auto;
+    background: #eee url('Number.webp') no-repeat
+      center center/cover;
+  }
+        .lastResult {
+    color: white;
+    padding: 3px;
+  }
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-color);
+    text-transform: uppercase;
+    margin: 0 auto 0 0;
+}
+.logo span{
+    color: var(--main-color);
+}
+
+.container {
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-left: 1rem;
+    text-align: left;
+   
+  }
+
+  .navbar{
+    display: grid;
+    row-gap: 1rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+.navbar a{
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.navbar a:hover {
+    border-bottom: 4px solid var(--main-color);
+    font-size: 1.8rem;
+}

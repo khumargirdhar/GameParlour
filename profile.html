@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profile</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="profile.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <center>
+            <div class="box">
+                <img src="profile.png">
+                <input type="file" name="" id="file" accept="image/*">
+                <label for="file">EDIT PROFILE PICTURE</label>
+                <input type="text" id="profileName" name="" placeholder="Full Name">
+                <input type="email" name="" id="profileEmail" placeholder="Email ID">
+                <input type="text" name="" id="profilePhoneNo" placeholder="Phone Number">
+                <input type="text" name="" id="profileDOB" placeholder="Date of Birth">
+                <input type="text" name="" id="profileGender" placeholder="Gender">
+                <button style="float: left;margin:10px 0 0 18.2%;">CANCEL</button>
+                <button style="float: right;margin:10px 18.2% 0 0;">DONE</button>
+            </div>
+        </center>
+        <div class="pricing-plan-container">
+            <section class="pricing-plan">
+                <div class="pricing-plan__header">
+                    <h1 class="pricing-plan__title">BASIC</h1>
+                    <h2 class="pricing-plan__summary">For those getting started</h2>
+                </div>
+                <div class="pricing-plan__description">
+                    <ul class="pricing-plan__list">
+                        <li class="pricing-plan__feature">HD Quality</li>
+                        <li class="pricing-plan__feature">Play on Android, Win and macOS</li>
+                        <li class="pricing-plan__feature">50 Play Hours per Month</li>
+                        <li class="pricing-plan__feature">Access to some games</li>
+                    </ul>
+                </div>
+                <div class="pricing-plan__actions">
+                    <p class="pricing-plan__cost">Rs. 199</p>
+                    <p class="pricing-plan__text">per month</p>
+                    <a href="https://rzp.io/i/zpeGo83l" class="pricing-plan__button" target="_blank">Purchase</a>
+                    <p class="pricing-plan__text">Access to owned games</p>
+                </div>
+            </section>
+            <section class="pricing-plan pricing-plan--highlighted">
+                <div class="pricing-plan__special-text">Recommended</div>
+                <div class="pricing-plan__header">
+                    <h1 class="pricing-plan__title">PRO</h1>
+                    <h2 class="pricing-plan__summary">For Pro Player</h2>
+                </div>
+                <div class="pricing-plan__description">
+                    <ul class="pricing-plan__list">
+                        <li class="pricing-plan__feature">Full HD Quality</li>
+                        <li class="pricing-plan__feature">Play on Android, Win and macOS</li>
+                        <li class="pricing-plan__feature">80 Play Hours per Month</li>
+                        <li class="pricing-plan__feature">Access to all games</li>
+                    </ul>
+                </div>
+                <div class="pricing-plan__actions">
+                    <p class="pricing-plan__cost">Rs. 499</p>
+                    <p class="pricing-plan__text">per month</p>
+                    <a href="https://rzp.io/i/bKz3CL6i" class="pricing-plan__button" target="_blank">Purchase</a>
+                    <p class="pricing-plan__text">Access to owned games</p>
+                </div>
+            </section>
+            <section class="pricing-plan">
+                <div class="pricing-plan__header">
+                    <h1 class="pricing-plan__title">ULTRA</h1>
+                    <h2 class="pricing-plan__summary">For full Access</h2>
+                </div>
+                <div class="pricing-plan__description">
+                    <ul class="pricing-plan__list">
+                        <li class="pricing-plan__feature">Ultra HD Quality</li>
+                        <li class="pricing-plan__feature">Play on Android, Win and macOS</li>
+                        <li class="pricing-plan__feature">140 Play Hours per Month</li>
+                        <li class="pricing-plan__feature">Access to all games</li>
+                    </ul>
+                </div>
+                <div class="pricing-plan__actions">
+                    <p class="pricing-plan__cost">Rs. 999</p>
+                    <p class="pricing-plan__text">per month</p>
+                    <a href="https://rzp.io/i/BG808cU63" class="pricing-plan__button" target="_blank">Purchase</a>
+                    <p class="pricing-plan__text">Access to owned games</p>
+                </div>
+            </section>
+        </div>
+
+
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics.js";
+            import { getAuth, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-auth.js";
+            import { getDatabase, ref, onValue, child } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-database.js";
+
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+            apiKey: "AIzaSyC7FwfSWzYnpD8t4FAxuNs6Sj2ejHA4zAk",
+            authDomain: "gameparlour-a3458.firebaseapp.com",
+            projectId: "gameparlour-a3458",
+            storageBucket: "gameparlour-a3458.appspot.com",
+            messagingSenderId: "420512068803",
+            appId: "1:420512068803:web:4aeab218cdc6e833245e76",
+            measurementId: "G-5C7MLF0CH8"
+            };
+
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const auth = getAuth(app);
+            const analytics = getAnalytics(app);
+            const database = getDatabase(app);
+
+            //Reading user data from database
+            // var userRef = database.ref('users/' + 'sU7NXZRldTalF9b2PmMGDSW6JUb2');
+            // userRef.on('value', function(snapshot) {
+            //     var data = snapshot.val();
+
+            //     console.log(data);
+            // })
+
+            var Full_Name = localStorage.getItem("fullName") || "Anonymous";
+            var gender = localStorage.getItem("gender") || "N/A";
+            var DOB = localStorage.getItem("DOB") || "N/A";
+            var Email = localStorage.getItem("email") || "Anonymous";
+            var Phone_No = localStorage.getItem("phoneNo") || "Anonymous";
+
+            document.getElementById('profileName').placeholder = Full_Name;
+            document.getElementById('profileGender').placeholder = gender;
+            document.getElementById('profileDOB').placeholder = DOB;
+            document.getElementById('profileEmail').placeholder = Email;
+            document.getElementById('profilePhoneNo').placeholder = Phone_No;
+        </script>
+    </body>
+</html>
