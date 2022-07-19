@@ -5,4 +5,4 @@
 - <b>I worked on Back-End, Authentication and Database.</b>
 
 
-### You can visit GameParlour at <a href="https://gameparlour-a3458.web.app/">https://gameparlour-a3458.web.app/</a>
+### You can visit GameParlour at <a href="https://gameparlour-a3458.web.app/" target="_blank">gameparlour-a3458.web.app</a>
