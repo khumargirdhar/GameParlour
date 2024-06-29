@@ -7,10 +7,24 @@
 ### You can visit GameParlour at <a href="https://gameparlour-a3458.web.app/" target="_blank">gameparlour-a3458.web.app</a>
 
 # screenshots
+
+### Login Page
 ![screenshot1](https://github.com/khumargirdhar/GameParlour/blob/main/images/screenshots/loginPage.png)
+
+### Home Page
 ![screenshot2](https://github.com/khumargirdhar/GameParlour/blob/main/images/screenshots/homePage.png)
+
+### Menu
 ![screenshot3](https://github.com/khumargirdhar/GameParlour/blob/main/images/screenshots/menu.png)
+
+### Age Page
 ![screenshot4](https://github.com/khumargirdhar/GameParlour/blob/main/images/screenshots/agePage.png)
+
+### New Games Page
 ![screenshot5](https://github.com/khumargirdhar/GameParlour/blob/main/images/screenshots/newGamesPage.png)
+
+### More Games Page
 ![screenshot6](https://github.com/khumargirdhar/GameParlour/blob/main/images/screenshots/gamesPage.png)
+
+### Subscriptions Page
 ![screenshot7](https://github.com/khumargirdhar/GameParlour/blob/main/images/screenshots/subscriptionPage.png)
